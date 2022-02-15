@@ -4,10 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Typed JS | Tutorial</title>
+    <title>Typed Js | Tutorial</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hello</h1>  
-    <h1>I'm <span class="type">Istiak Hossain</span></h1>
+    <div class="content">
+        <h1>Hello</h1>
+        <h1>I'm <span class="type"></span></h1>
+    </div>
+
+
+    <script src="js/typed.js"></script>
+    <script>
+        var typed = new Typed('.type', {
+            strings: [
+                'Istiak',
+                'Developer',
+                'Designer',
+                'Freelancer'
+                ],
+                typeSpeed: 60,
+                backSpeed: 60,
+                loop: true
+            });
+    </script>
 </body>
 </html>
